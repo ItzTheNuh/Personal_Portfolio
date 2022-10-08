@@ -67,8 +67,7 @@
 <br>
 <h2 style="font-family:Poppins;background-color:#b5b5b5; color:#000000;">A Bonus Form</h2>
 <br>
-<p style="font-family:Roboto;">This form was made using PHP!</p>
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<form>
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
@@ -82,20 +81,9 @@
   <label for="Birthday">Birthday:</label>
   <input type="date" name="Birthday" id="birthday">
   <label for="number">Age</label>
-  <input type="number" name="number" id="age">
+  <input type="number" name="number" id="age"><br><br>
   <input type="submit" value="Submit">
 </form>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = $_POST['fname'];
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        echo $name;
-    }
-}
-?>
 <br>
 <br>
 <br>
