@@ -68,7 +68,7 @@
 <h2 style="font-family:Poppins;background-color:#b5b5b5; color:#000000;">A Bonus Form</h2>
 <br>
 <p style="font-family:Roboto;">This form was made using PHP!</p>
-<form action="/action_page.php" method="post" target="_blank">
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
